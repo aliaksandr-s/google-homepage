@@ -1,5 +1,5 @@
 # google-homepage-project
 
-### lesson link:
-(http://codenamecrud.ru/basics-of-web-development/project-html-css)
+### link to the lesson:
+http://codenamecrud.ru/basics-of-web-development/project-html-css
 
