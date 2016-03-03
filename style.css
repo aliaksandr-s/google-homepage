@@ -4,10 +4,10 @@
   font-family: inherit;
   font-style: inherit;
   font-size: 100%;
-  border: 0 none;
   outline: 0;
   padding: 0;
   margin: 0;
+  transition: 0.3s;
   }
 body{
   font-family: arial, sans-serif;
@@ -88,4 +88,120 @@ header #profile a{
   text-decoration: none;
   cursor: default;
   left: 10px;
+}
+
+main{
+  max-width: 600px;
+  margin: 140px auto 0;
+}
+
+main .img{
+  background: url("googlelogo_color_272x92dp.png") no-repeat;
+  width: 272px;
+  height: 92px;
+  margin: 0 auto;
+  position: relative;
+}
+main .subtext{
+  position: absolute;
+  left: 216px;
+  top: 78px;
+  color: #4285f4;
+  font: 16px arial, sans-serif;
+}
+
+main .inputs{
+  max-width: 560px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid rgb(226, 221, 221);
+  margin: 25px auto;
+  text-indent: 7px;
+}
+
+main .inputs:hover{
+  border: 1px solid rgb(198, 193, 193)
+}
+
+main .inputs input{
+  font-size: 1.25em;
+  border: none;
+  vertical-align: middle;
+  width: 495px;
+}
+
+main .inputs .voice, main .inputs .keyboard{
+  background: url("voice.png") no-repeat 0 -2px;
+  background-size: 24px 24px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+main .inputs .keyboard{
+    background: url("keyboard.gif") no-repeat 0 4px;
+    opacity: 0.6;
+}
+main .inputs .keyboard:hover, main .inputs .voice:hover{
+  opacity: 1;
+  position: relative;
+}
+
+main .inputs .keyboard:hover:after, main .inputs .voice:hover:after{
+  content: "Экранная клавиатура";
+  display: inline;
+  padding-right: 5px;
+  color: white;
+  background-color: rgb(51, 47, 47);
+  position: absolute;
+  top: 32px;
+  left: -104px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+main .inputs .keyboard:hover:before, main .inputs .voice:hover:before{
+  content: "";
+  border: 6px solid;
+  border-color: transparent transparent  rgb(51, 47, 47);
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 3px;
+}
+main .inputs .voice:hover:after{
+  content: "Голосовой поиск";
+  left: -82px;
+}
+
+main .buttons {
+  margin: 0 auto;
+  width: 500px;
+}
+
+main .center-buttons{
+  width: 280px;
+  margin: 0 auto;
+}
+
+main .search{
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+main .search:hover{
+  border-color: #d4cdcd;
+  color: rgb(51, 47, 47);
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
