@@ -205,3 +205,35 @@ main .search:hover{
   color: rgb(51, 47, 47);
   box-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
+
+
+footer {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #e8e1e1;
+}
+footer a{
+  text-decoration: none;
+  color: #666;
+  margin-left: 25px;
+}
+footer a:last-child{
+  margin-right: 20px;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+footer .left{
+  float: left;
+}
+footer .right{
+  float: right;
+}
+
+.focused {
+  border: 1px solid #4285f4 !important;
+}
